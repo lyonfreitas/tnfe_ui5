@@ -1,0 +1,6 @@
+/*!
+ * OpenUI5
+ * (c) Copyright 2009-2021 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+sap.ui.define(["sap/ui/integration/widgets/Card","sap/ui/integration/util/BindingHelper","sap/ui/integration/util/BindingResolver","sap/ui/integration/util/Utils"],function(C,B,a,U){"use strict";var M={};M.resolve=function(m,b){var c=new C({baseUrl:b,manifest:m});c.startManifestProcessing();return M._awaitReadyEvent(c).then(M._handleCardReady);};M._awaitReadyEvent=function(c){return new Promise(function(r,b){c.attachEvent("_ready",function(e){r(c);});});};M._handleCardReady=function(c){var m=c.getManifestEntry("/");var f=[];if(c.getAggregation("_filterBar")){f=c.getAggregation("_filterBar").getItems().map(function(F){return["/sap.card/configuration/filters/"+F.getKey(),F];});}f.concat([["/sap.card/content",c.getCardContent()],["/sap.card/header",c.getCardHeader()],["/sap.card",c]]).filter(function(p){return!!c.getManifestEntry(p[0]);}).forEach(function(p){var s=p[0];var o=p[1];var S;if(o.getStaticConfiguration){S=o.getStaticConfiguration();}else{S=U.getNestedPropertyValue(m,s);}if(S.data){var d=S.data.path;delete S.data;S=B.createBindingInfos(S,c.getBindingNamespaces());S=a.resolveValue(S,o,d);}U.setNestedPropertyValue(m,s,S);});c.destroy();return JSON.stringify(m);};return M;});

@@ -1,0 +1,130 @@
+{
+	"_version": "1.1.0",
+	"resources": [
+		{
+			"name": ".theming",
+			"size": 64,
+			"theme": "base"
+		},
+		{
+			"name": "AddIFrame.less",
+			"size": 2919,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "ChangeVisualization.less",
+			"size": 3761,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "FieldRepository.less",
+			"size": 2209,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "MessageBox.less",
+			"size": 254,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "Overlay.less",
+			"size": 6074,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "OverlayWithScrollbar.less",
+			"size": 1332,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "Toolbar.adaptation.less",
+			"size": 4340,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "Toolbar.base.less",
+			"size": 4867,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "Toolbar.fiori.less",
+			"size": 741,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "Toolbar.personalization.less",
+			"size": 1139,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "Toolbar.standalone.less",
+			"size": 711,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "css_variables.css",
+			"size": 5910,
+			"theme": "base"
+		},
+		{
+			"name": "css_variables.less",
+			"size": 240,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "css_variables.source.less",
+			"size": 98493,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "library-RTL.css",
+			"size": 27348,
+			"theme": "base"
+		},
+		{
+			"name": "library-parameters.json",
+			"size": 2410,
+			"theme": "base"
+		},
+		{
+			"name": "library.css",
+			"size": 27344,
+			"theme": "base"
+		},
+		{
+			"name": "library.less",
+			"size": 29582,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "library.source.less",
+			"size": 626,
+			"designtime": true,
+			"theme": "base"
+		},
+		{
+			"name": "library_skeleton-RTL.css",
+			"size": 27657,
+			"theme": "base"
+		},
+		{
+			"name": "library_skeleton.css",
+			"size": 27653,
+			"theme": "base"
+		}
+	]
+}

@@ -1,0 +1,6 @@
+/*!
+ * OpenUI5
+ * (c) Copyright 2009-2021 SAP SE or an SAP affiliate company.
+ * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
+ */
+sap.ui.define(["sap/m/table/ColumnMenuEntry"],function(C){"use strict";var I=C.extend("sap.m.table.ItemBase",{metadata:{"abstract":true,library:"sap.m"}});I.prototype.init=function(){this._oButtonSettings={reset:{visible:true,enabled:true},confirm:{visible:true,enabled:true},cancel:{visible:true,enabled:true}};};I.prototype.getEffectiveItems=function(){return[this];};I.prototype.getIcon=function(){if(this.getMetadata().hasProperty("icon")){return this.getProperty("icon");}throw new Error(this+" does not implement #getIcon");};I.prototype.onPress=function(e){};I.prototype.onBack=function(e){};I.prototype.onConfirm=function(e){};I.prototype.onCancel=function(e){};I.prototype.onReset=function(e){};I.prototype.getButtonSettings=function(){return this._oButtonSettings;};I.prototype.changeButtonSettings=function(b){Object.keys(b).forEach(function(B){if(this._oButtonSettings.hasOwnProperty(B)){Object.keys(b[B]).forEach(function(s){this._oButtonSettings[B][s]=b[B][s];},this);}},this);this.getMenu()&&this.getMenu()._updateButtonState(this);};return I;});
